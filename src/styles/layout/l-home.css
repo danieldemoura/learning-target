@@ -1,5 +1,5 @@
 .l-home {
-    background-image: url(/src/assets/backgrounds/bg-header-home.jpg);
+    background-image: url(../../assets/backgrounds/bg-header-home.jpg);
     background-size: cover;
     background-position: center -5rem;
     background-repeat: no-repeat;

@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url('/src/assets/backgrounds/bg-body.jpg');
+    background-image: url('../../assets/backgrounds/bg-body.jpg');
     background-color: var(--body-color);
     font-size: 1.6rem;
 }

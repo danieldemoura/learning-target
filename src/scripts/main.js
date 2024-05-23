@@ -1,7 +1,7 @@
 import { layoutStages, toggleAccordion } from "./accordion.js"
 import { openMenu, btnMenu } from "./openMenu.js"
-import { loadVideo } from "/src/components/videoPlayer/videoPlayerRender.js"
-import { startCarouselRendering } from '/src/components/carousel/carousel.js'
+import { loadVideo } from "../components/videoPlayer/videoPlayerRender.js"
+import { startCarouselRendering } from '../components/carousel/carousel.js'
 import { coursePageRender } from "./coursePageRender.js"
 
 const initApp = () => {
