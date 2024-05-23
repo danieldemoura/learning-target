@@ -35,7 +35,7 @@ const renderCourseCard = courses => courses.map(item => {
 
     return `
         <li class="slide js-slider">
-            <a href="/src/pages/page-course.html?channel=${channelURL}&course-id=${id}">
+            <a href="src/pages/page-course.html?channel=${channelURL}&course-id=${id}">
                 <img class="slide__thumbnail" src="${poster}" alt="${name}">
             </a>
             <span class="slide__label">${name}</span>
