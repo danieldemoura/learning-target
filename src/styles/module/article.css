@@ -1,0 +1,110 @@
+.article__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+    max-width: 114rem;
+    margin-top: 10rem;
+
+    .article__poster {
+        border-radius: 1.6rem;
+        border: 1px solid rgb(0 0 0);
+    
+        max-width: 25.2rem;
+        height: 25.2rem;;
+        object-fit: cover;
+    }
+}
+
+.article__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    max-width: 58rem;
+
+    .article__label {
+        border-radius: 4px;
+        background-color: #edf256;
+        color: #000000;
+        font-weight: 600;
+        font-size: 1.4rem;
+        padding: 4px 1rem;
+        text-decoration: none;
+    
+        width: fit-content;
+        height: 2.4rem;
+    }
+    
+    .article__label:hover {
+        background-color: #f8ff22;
+    }
+    
+    .article__title {
+        font-size: 2.8rem;
+    }
+    
+    .article__description {
+        display: grid;
+        gap: 2.4rem;
+    
+        font-size: 1.6rem;
+        margin: 0rem 0rem 2.6rem;
+    
+        .article__paragraph {
+            overflow: hidden;
+            white-space: break-spaces;
+        }
+    }
+    
+    .article__tags {
+        display: flex;
+        gap: 2.4rem;
+        max-height: 2.7rem;
+    
+        .article__tag {
+            background-color: rgba(10, 4, 31, .8);
+            border: 1px solid #3C2F69;
+            border-radius: 4px;
+            padding: 4px 1.2rem;
+        
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        
+        .article__tag:hover {
+            background-color: rgba(42, 25, 77, 0.8);
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .article__content {
+        flex-direction: initial;
+        margin-top: initial;
+    }
+
+    .article__wrapper {
+        display: grid;
+        height: 24.4rem;
+        max-width: initial;
+
+        .article__title {
+            font-size: 3.2rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .article__description {
+            font-size: 1.8rem;
+    
+            .article__paragraph {
+                height: 10.5rem;
+            }
+        }
+    
+        .article__tag {
+            font-size: 1.4rem;
+        }
+    }
+}

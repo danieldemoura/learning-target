@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearningTarget - Video</title>
+
+    <!-- Foonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Style Main -->
+    <link rel="stylesheet" href="../styles/main.css" />
+</head>
+<body>
+    <header class="l-header l-header-video">
+        <nav class="menu">
+            <div class="menu__content-1">
+                <h2 class="logo"><a href="../../index.html">Learning Target</a></h2>
+            </div>
+            <div class="menu__content-2 js-menu">
+                <span tabindex="0" class="menu__list">Lista de cursos</span>
+                <form action="#" method="get" class="menu__form">
+                    <input class="menu__input" type="text" name="search" aria-label="Pesquisar cursos" placeholder="Pesquisar curso"/>
+                </form>
+                <button class="menu__avatar" type="button" aria-label="Menu da conta" aria-haspopup="menu">
+                    <img class="menu__image" src="https://github.com/danieldemoura.png" alt="Imagem de perfil do úsuario" />
+                </button>
+            </div>
+            <iconify-icon class="menu__btn js-btn-menu" icon="material-symbols:menu" width="40" height="40"  style="color: #eeeeee"></iconify-icon>
+        </nav>
+    </header>
+    <main class="l-main">
+        <form data-js="form" action="" class="form-up">
+            <fieldset class="form-up__group">
+                <legend class="form-up__legend">Dados do Curso</legend>
+                <div class="form-up__wrapper">
+                    <label class="form-up__label" for="playlist-link">Playlist Link (Campo obrigatório)</label>
+                    <input data-js="playlist-link" class="form-up__field-playlist" type="text" name="playlist" id="playlist" placeholder="Adicione o link de uma playlist do Youtube" autocomplete="off"  pattern="^(https:\/\/www\.youtube\.com\/playlist\?list=.{10,})" title="https://www.youtube.com/playlist?list=Dfkn5n..." required>
+                </div>
+                <div class="form-up__wrapper">
+                    <label class="form-up__label" for="title">Título (Campo obrigatório)</label>
+                    <input data-js="title" class="form-up__field-title" type="text" name="title" id="title" placeholder="Insira o nome do curso" required>
+                </div>
+                <div class="form-up__wrapper">
+                    <label class="form-up__label" for="description">Descrição (Campo obrigatório)</label>
+                    <textarea data-js="description" class="form-up__field-desc" name="description" id="description" placeholder="Descreva de maneira resumida sobre o que é  abordado no curso" minlength="10" maxlength="300" required></textarea>
+                    <span class="form-up__max-char" data-js="maxlength">0/300</span>
+                </div>
+                <div class="form-up__wrapper">
+                    <label class="form-up__label" for="genere">Tags (Campo obrigatório)</label>
+                    <input data-js="genere" class="form-up__field-genere" type="text" name="genere" id="genere" placeholder="Adicione os gêneros do curso separado por virgula, ex: javascript, front-end" autocomplete="off" required></input>
+                </div>
+                <div class="form-up__wrapper">
+                    <label class="form-up__label" for="category">Categoria (Campo obrigatório)</label>
+                    <input class="form-up__category" type="text" list="category-list" id="category" name="category" title="Ecolha uma categoria pra o curso" placeholder="Escolha uma categoria" required>
+
+                    <datalist id="category-list">
+                        <option value="Design"></option>
+                        <option value="Back-end"></option>
+                        <option value="Front-end"></option>
+                        <option value="Full Stack"></option>
+                        <option value="Idiomas"></option>
+                        <option value="Investimento"></option>
+                        <option value="Marketing"></option>
+                        <option value="UI Design"></option>
+                        <option value="UX Design"></option>
+                    </datalist>
+                </div>
+            </fieldset>
+            <button class="form-up__submit">Salvar</button>
+        </form>
+    </main>
+    <footer class="l-footer">
+        <h2 class="logo">Learning Target</h2>
+        <p class="copyright">Desenvolvido com muito amor por <a href="https://github.com/danieldemoura" target="_blank">Daniel de Moura</a></p>
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+    <script src="../scripts/main.js" type="module"></script>
+    <script type="module" src="/src/components/formUpload/formUpload.js"></script>
+</body>
+</html>

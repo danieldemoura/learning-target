@@ -1,0 +1,186 @@
+.l-main:has(.form-up) {
+    display: block;
+}
+
+.form-up {
+    background-color: rgba(43, 54, 82, 0.60);
+    backdrop-filter: blur(10px);
+    border-radius: 0.8rem;
+
+    padding: 3rem 1rem;
+    margin: 0rem auto;
+
+    @media screen and (min-width: 500px) {
+        padding: 3rem 4rem;
+    }
+
+    .form-up__wrapper:focus-within {
+        outline: 2px solid rgb(82, 184, 239);
+    }
+
+    .form-up__group {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .form-up__legend {
+        height: 0px;
+        width: 0px;
+        overflow: hidden;
+    }
+
+    .form-up__wrapper {
+        display: flex;
+        background-color: #101a2d;
+        border-radius: 0.8rem;
+        flex-direction: column;
+        position: relative;
+
+        .form-up__label {
+            margin-left: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .form-up__field-title,
+        .form-up__field-desc,
+        .form-up__field-genere,
+        .form-up__field-playlist,
+        .form-up__select,
+        .form-up__category {
+            border: none;
+            background-color: transparent;
+            color: #fff;
+            
+            font-size: 1.4rem;
+            padding: 0.4rem 1.5rem 1rem;
+            resize: none;
+            outline: none;
+        }
+
+        .form-up__field-desc {
+            height: 10rem;
+        }
+
+        .form-up__max-char {
+            text-align: end;
+            padding: 0rem 2rem 1rem;
+        }
+
+        .form-up__field-genere {
+            height: 3.2rem;
+        }
+    }
+    
+    .form-up__submit {
+        border: none;
+        background-color: #1E4CC9;
+        border-radius: .8rem;
+
+        color: white;
+        cursor: pointer;
+        padding: 1rem 1.4rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        margin-top: 2rem;
+    }
+}
+
+.select {
+    background-color: #101a2d;
+    border-radius: .8rem;
+    cursor: pointer;
+
+    padding: 1rem 1.4rem;
+    list-style: none;
+    position: relative;
+    max-width: 28rem;
+
+    &:active {
+        outline: 2px solid rgb(82, 184, 239);
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m7 10l5 5l5-5z'/%3E%3C/svg%3E");
+        background-color: currentColor;
+        -webkit-mask-image: var(--svg);
+        mask-image: var(--svg);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+        mask-size: 100% 100%;
+    
+        position: absolute;
+        top: .4rem;
+        right: .8rem;
+    }
+    
+    .select__selected {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    
+        cursor: pointer;
+    }
+    
+    .select__icon {
+        flex-shrink: 0;
+        width: 1.8rem;
+    }
+    
+    .select__dropdown {
+        padding-top: 2.8rem;
+        width: 100%;
+    
+        position: absolute;
+        top: 14px;
+        left: 0;
+    }
+    
+    .select__options {
+        backdrop-filter: blur(5px);
+        background-color: var(--select-options-color);
+        border: 1px solid var(--select-options-color);
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.345);
+        border-radius: 0.4rem;
+        list-style: none;
+    
+        height: fit-content;
+        max-height: 213px;
+        overflow-y: auto;
+    
+    }
+    
+    .select__item {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1rem;
+        gap: 8px;
+    
+        font-size: 1.2rem;
+    }
+    
+    .select__item:hover {
+        background-color: var(--select-item-hover-bg-color);
+    }
+    
+    .select__item:first-child ~ .select__item {
+        border-top: 1px solid rgba(57, 74, 120, 0.80);
+    }
+    
+    .select__item > * {
+        pointer-events: none;
+    }
+    
+    .select__span {
+        text-transform: capitalize;
+    }
+}
+

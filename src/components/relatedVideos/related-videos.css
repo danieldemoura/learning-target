@@ -1,0 +1,25 @@
+.reletad-videos {
+    border-radius: .5rem;
+    padding-bottom: 3rem;
+
+    list-style: none;
+    display: grid;
+    max-height: 47rem;
+    overflow-y: scroll;
+}
+
+.reletad-videos__video {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 1rem 1.6rem 1rem;
+}
+
+
+.reletad-videos__link {
+    text-decoration: none;
+}
+
+.reletad-videos__link:hover {
+    color: rgb(33, 161, 231);
+}

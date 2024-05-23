@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearningTarget - Video</title>
+
+    <!-- Foonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Style Main -->
+    <link rel="stylesheet" href="../styles/main.css" />
+</head>
+<body>
+    <header class="l-header l-header-video">
+        <nav class="menu">
+            <div class="menu__content-1">
+                <h2 class="logo"><a href="../../index.html">Learning Target</a></h2>
+            </div>
+            <div class="menu__content-2 js-menu">
+                <span tabindex="0" class="menu__list">Lista de cursos</span>
+                <form action="#" method="get" class="menu__form">
+                    <input class="menu__input" type="text" name="search" aria-label="Pesquisar cursos" placeholder="Pesquisar curso"/>
+                </form>
+                <button class="menu__avatar" type="button" aria-label="Menu da conta" aria-haspopup="menu">
+                    <a href="/src/pages/upload.html">
+                        <img class="menu__image" src="https://github.com/danieldemoura.png" alt="Imagem de perfil do úsuario" />
+                    </a>
+                </button>
+            </div>
+            <iconify-icon class="menu__btn js-btn-menu" icon="material-symbols:menu" width="40" height="40"  style="color: #eeeeee"></iconify-icon>
+        </nav>
+    </header>
+    <main class="l-main l-video">
+        <div class="l-main__content">
+            <section class="video">
+                <h1 class="video__title" data-js="lesson-title"></h1>
+                <div class="video__container" data-js="video-container"></div>
+                <div class="video__controls" data-js="vd-controls"></div>
+            </section>
+            <section class="description js-video-desc"></section>
+        </div>
+
+        <aside class="l-aside l-aside-videos">
+            <div class="card__container">
+                <span class="js-total-lessons">Aulas: 00/00</span>
+                <div class="progress-bar" id="progress-lessons" max="100" value="10" title="Barra de progresso">
+                    <div class="progress-bar__percentage" title="Progresso de aulas assitidas: 5%"></div>
+                </div>
+            </div>
+            <div class="l-videos-container">
+                <ol class="reletad-videos js-related-container">
+                </ol>
+            </div>
+        </aside>
+    </main>
+    <footer class="l-footer">
+        <h2 class="logo">Learning Target</h2>
+        <p class="copyright">Desenvolvido com muito amor por <a href="https://github.com/danieldemoura" target="_blank">Daniel de Moura</a></p>
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+    <script src="../scripts/main.js" type="module" />
+</body>
+</html>

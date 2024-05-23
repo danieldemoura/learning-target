@@ -1,0 +1,10 @@
+.logo {
+    color: var(--menu-logo-color);
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.4rem;
+    white-space: nowrap;
+}
+
+.logo a {
+    text-decoration: none;
+}

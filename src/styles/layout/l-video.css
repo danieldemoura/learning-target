@@ -1,0 +1,38 @@
+.l-header-video {
+    background-image: url(../../assets/backgrounds/bg-codes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border: none;
+    border-radius: 0rem;
+    height: 16rem;
+    filter: none;
+}
+
+.l-header::before {
+    background-image: linear-gradient(to top, rgb(4, 16, 36), rgba(4, 16, 36, 0));
+    backdrop-filter: blur(5px);
+}
+
+.l-video {
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.l-aside-videos {
+    gap: 1.8rem;
+    z-index: 2;
+    flex-direction: column;
+}
+
+.l-videos-container {
+    position: relative;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .l-aside-videos {
+        margin-top: -7rem;
+    }
+}

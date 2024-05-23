@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  },
+  "name": "eduflix",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "json": "json-server src/db.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

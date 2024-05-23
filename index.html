@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LearningTarget</title>
+
+    <!-- Foonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- Style Main -->
+    <link rel="stylesheet" href="./src/styles/main.css" />
+</head>
+<body>
+    <header class="l-header l-home">
+        <nav class="menu">
+            <div class="menu__content-1">
+                <h2 class="logo"><a href="./index.html">Learning Target</a></h2>
+            </div>
+            <div class="menu__content-2 js-menu">
+                <span tabindex="0" class="menu__list">Lista de cursos</span>
+                <form action="#" method="get" class="menu__form">
+                    <input class="menu__input" type="text" name="search" aria-label="Pesquisar cursos" placeholder="Pesquisar curso"/>
+                </form>
+                <button class="menu__avatar" type="button" aria-label="Menu da conta" aria-haspopup="menu">
+                    <a href="/src/pages/upload.html">
+                        <img class="menu__image" src="https://github.com/danieldemoura.png" alt="Imagem de perfil do úsuario" />
+                    </a>
+                </button>
+            </div>
+            <iconify-icon class="menu__btn js-btn-menu" icon="material-symbols:menu" width="40" height="40"  style="color: #eeeeee"></iconify-icon>
+        </nav>
+        <div class="l-banner">
+            <ul class="banner">
+                <li class="banner__item">
+                    <a href="/src/pages/page-course.html?channel=UCrWvhVmt0Qac3HgsjQK62FQ&course-id=4">
+                        <img class="banner__image" src="./src/assets/courses-banner/banner-1.jpg" alt="Banner">   
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="l-home-courses" data-js="container">
+        <section class="l-platform">
+            <div class="l-platform__wrapper">
+                <h2 class="l-platform__title">Os melhores curso de Programação</h2>
+                <p class="l-platform__info">
+                    Aqui você pode encontrar os melhores curso de programação totalmente de graça, estude com foco no seu objetivo, cursos desde frontend até backend.
+                </p>
+                <ol class="l-platform__list">
+                    <li class="l-platform__item">
+                        <img class="l-platform__img" src="./src/assets/courses-banner/ecma-script.jpg" alt="Curso Grátis de JavaScript e ECMAScript para Iniciantes">
+                    </li>
+                    <li class="l-platform__item">
+                        <img class="l-platform__img" src="/src/assets/courses-banner/reactjs.jpg" alt="Curso de React">
+                    </li>
+                    <li class="l-platform__item">
+                        <img class="l-platform__img" src="/src/assets/courses-banner/javascript-roger-melo.jpg" alt="JavaScript do zero (curso para iniciantes)">
+                    </li>
+                    <li class="l-platform__item">
+                        <img class="l-platform__img" src="/src/assets/courses-banner/nextjs.jpg" alt="Curso de Next.js">
+                    </li>
+                    <li class="l-platform__item">
+                        <img class="l-platform__img" src="/src/assets/courses-banner/java-iniciante.jpg" alt="Curso de Java para Iniciantes - Grátis, Completo e com Certificado">
+                    </li>
+                    <li class="l-platform__item">
+                        <img class="l-platform__img" src="/src/assets/courses-banner/css-grid.jpg" alt="CSS Grid Curso Completo">
+                    </li>
+                    <li class="l-platform__item">
+                        <img class="l-platform__img" src="/src/assets/courses-banner/java-poo.jpg" alt="Curso de POO Java (Programação Orientada a Objetos)">
+                    </li>
+                    <li class="l-platform__item">
+                        <img class="l-platform__img" src="/src/assets/courses-banner/tailwindcss.jpg" alt="Curso gratuito TailwindCSS 21eLaBow7Zbo">
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+    <footer class="l-footer">
+        <h2 class="logo">Learning Target</h2>
+        <p class="copyright">Desenvolvido com muito amor por <a href="https://github.com/danieldemoura" target="_blank">Daniel de Moura</a></p>
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+    <script src="./src/scripts/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.l-banner {
+    display: flex;
+    align-items: center;
+    padding-top: 6rem;
+    height: 100%;
+    position: relative;
+}

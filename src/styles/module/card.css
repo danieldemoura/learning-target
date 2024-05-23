@@ -1,0 +1,76 @@
+.card {
+    background-color: var(--card-background-color);
+    border-radius: var(--stage-border-radius);
+    height: fit-content;
+    overflow: hidden;
+    flex-grow: 1;
+    width: 35.2rem;
+}
+
+.card__title {
+    background-color: var(--second-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 1.2rem 2rem;
+}
+
+.card__figure-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    padding: 2rem 2rem;
+}
+
+.card__figure {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.card__wrapper {
+    display: grid;
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+
+.card__container {
+    display: flex;
+    align-items: center;
+    gap: 2.3rem;
+}
+
+.card__image {
+    border-radius: var(--circle-border-radius);
+    width: 5rem;
+}
+
+.card__teacher {
+    font-size: 1.6rem;
+}
+
+.card__link {
+    text-decoration: none;
+}
+
+.card__link:hover {
+    color: #349cff;
+    text-decoration: underline;
+}
+
+.card__btn {
+    border: none;
+    border-radius: var(--card-btn-border-radius);
+    background-color: rgb(24, 110, 191);
+    color: var(--card-btn-text-color);
+    cursor: pointer;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1rem 0rem;
+    width: 100%;
+}
+
+.card__btn:hover {
+    background-color: var(--card-btn-background-color);
+}

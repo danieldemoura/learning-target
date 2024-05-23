@@ -1,0 +1,13 @@
+.l-home-courses {
+    display: flex;
+    flex-direction: column;
+    gap: 5.6rem;
+    padding: 4.5rem 0rem 0rem 0rem;
+
+    backdrop-filter: blur(15px);
+    background-color: var(--primary-color);
+}
+
+.l-dashboard {
+    gap: 0rem;
+}

@@ -1,0 +1,33 @@
+.l-main {
+    backdrop-filter: blur(15px);
+    background-color: var(--primary-color);
+    padding: 0rem var(--layout-padding) 5rem;
+
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5.2rem;
+}
+
+.l-main__content {
+    grid-area: main;
+    position: relative;
+    z-index: 4;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .l-main {
+        padding: 5rem 5.8rem;
+    
+        display: grid;
+        grid-template-columns: 1fr 35.2rem;
+        grid-template-areas: "main aside";
+    }
+    
+    .l-main.l-video {
+        column-gap: 5rem;
+    }
+}

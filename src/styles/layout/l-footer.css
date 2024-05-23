@@ -1,0 +1,17 @@
+.l-footer {
+    grid-area: footer;
+    background-color: #021332;
+    padding: 2rem 0rem 2rem 3rem;
+    color: white;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .l-footer {
+        padding: 2.1rem 6rem 2.1rem 6rem;
+    }
+}

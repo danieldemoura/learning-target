@@ -1,0 +1,43 @@
+:root {
+    /* colors */
+    --primary-color: hsla(220, 100%, 7%, 0.83);
+    --second-color: rgb(16, 31, 106);
+
+    /* scrollbar */
+    --scrollbar-track-color: rgba(11, 31, 61, 0.60);
+
+    --layout-padding: 2rem;
+    --body-color: #040f23;
+
+    /* menu */
+    --menu-background-color: rgba(5, 35, 82, 0.5);
+    --menu-input-background-color: rgba(4, 12, 27, 0.80);
+    --menu-logo-color: rgb(255, 255, 255);
+
+    /* header */
+    --l-header-before-image: linear-gradient(to top, rgb(8, 20, 38), rgba(15, 17, 20, 0));
+    
+    /* stages */
+    --stage-name-background-color: var(--second-color);
+    --stage-lessons-background-color: rgba(11, 25, 45, 0.60); 
+    --stage-circle-background-color: #000000;
+    --stage-check-color: #27ff00;
+    --stage-border-radius: .4rem;
+    --circle-border-radius: 100%;
+
+    /* aside */
+    --card-btn-text-color: #FFFFFF;
+    --card-btn-border-radius: .4rem;
+    --card-btn-background-color: var(--stage-name-background-color);
+    --card-background-color: rgba(11, 25, 45, 0.60);
+    --progressbar-percentage-background-color: #769BFB;
+    --progressbar-background-color: #303F66;
+
+    /* video */
+    --video-container-background-color: #0d0e0e;
+    --video-controls-background-color: rgba(11, 31, 61, 0.60);
+    --description-background-color: rgba(11, 31, 61, 0.60);
+    --select-background-color: #303F66;
+    --select-options-color: rgba(48, 63, 102, 0.70);
+    --select-item-hover-bg-color: #152748;
+}

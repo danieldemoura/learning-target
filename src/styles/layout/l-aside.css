@@ -1,0 +1,16 @@
+.l-aside {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-area: aside;
+    gap: 2.8rem;
+
+    height: fit-content;
+}
+
+@media screen and (min-width: 1024px) {
+    .l-aside {        
+        position: sticky;
+        top: 1rem;
+    }
+}

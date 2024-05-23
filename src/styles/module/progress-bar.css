@@ -1,0 +1,15 @@
+.progress-bar {
+    background-color: var(--progressbar-background-color);
+    border-radius: 1rem;
+
+    flex: 1;
+    height: 1rem;
+    overflow: hidden;
+}
+
+
+.progress-bar__percentage {
+    background-color: var(--progressbar-percentage-background-color);
+    width: 5%;
+    height: inherit;
+}

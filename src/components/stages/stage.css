@@ -1,0 +1,114 @@
+.stage {
+    border-radius: var(--stage-border-radius);
+}
+
+.stage__name {
+    background-color: var(--stage-name-background-color);
+    cursor: pointer;
+    display: flex;
+    gap: 2.4rem;
+
+    padding: 2rem 4rem 2rem 2rem;    
+    border-radius: 8px 8px 0px 0px;
+    position: relative;
+}
+
+.stage__name::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32px' height='32px' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23eeeeee' stroke-linecap='round' stroke-linejoin='round' d='m17 14l-5-5l-5 5'/%3E%3C/svg%3E");
+    cursor: pointer;
+        
+    position: absolute;
+    top: 2.5rem;
+    right: 1.4rem;
+    transition: transform .3s ease;
+}
+
+.stage__name.open::after {
+    transform: rotate(-180deg);
+}
+
+.stage__circle {
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--stage-circle-background-color);
+    border-radius: var(--circle-border-radius);
+
+    display: grid;
+    place-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.stage__check {
+    font-size: 42px;
+
+    display: flex;
+    align-items: center;
+}
+
+.stage__circle,
+.stage__header {
+    pointer-events: none;
+}
+
+.stage__header {
+    display: grid;
+}
+
+.stage__title {
+    font-size: 1.8rem;
+}
+
+.stage__wrapper-ol {
+    height: 0px;
+    transition: height .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    overflow: hidden;
+}
+
+.stage__lessons {
+    display: grid;
+    gap: 1.6rem;
+
+    background-color: var(--stage-lessons-background-color);
+    list-style-position: inside;
+    list-style-type: square;
+    padding: 3rem 2rem;
+}
+
+.stage__lesson {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.stage__link {
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+.stage__link:hover {
+    color: rgb(0, 179, 255);
+}
+
+.stage__lesson::marker {
+    font-size: 2rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .stage__name {
+        padding: 2rem 3.2rem;
+    }
+
+    .stage__name::after {
+        right: 3rem;
+    }
+
+    .stage__title {
+        font-size: 2rem;
+    }    
+
+    .stage__lessons {
+        padding: 3rem 3.2rem;
+    }
+}

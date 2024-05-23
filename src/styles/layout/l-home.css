@@ -1,0 +1,19 @@
+.l-home {
+    background-image: url(/src/assets/backgrounds/bg-header-home.jpg);
+    background-size: cover;
+    background-position: center -5rem;
+    background-repeat: no-repeat;
+
+    height: 38rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .l-home {
+        height: 48rem;
+    }
+
+    .l-home.l-header::after {
+        background-color: transparent;
+        backdrop-filter: blur(1px);
+    }
+}

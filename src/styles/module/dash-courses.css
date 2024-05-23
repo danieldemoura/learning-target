@@ -1,0 +1,95 @@
+.dash-courses {
+    padding: 0rem 3rem;
+    list-style: none;
+
+    display: grid;
+    gap: 2.4rem 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.dash-figure {
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #183D70;
+}
+
+.dash-figure__img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.dash-figure__caption {
+    padding: 8px 8px;
+}
+
+.dash-figure__title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 1.2rem;
+    padding-bottom: 8px;
+}
+
+.dash-figure__btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.ic--baseline-delete,
+.ic--round-mode-edit-outline {
+    color: #FFF;
+    cursor: pointer;
+}
+
+.ic--baseline-delete:hover,
+.ic--round-mode-edit-outline:hover {
+    color: rgb(20, 203, 56);
+}
+
+.ic--baseline-delete {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6zM19 4h-3.5l-1-1h-5l-1 1H5v2h14z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.ic--round-mode-edit-outline {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M3 17.46v3.04c0 .28.22.5.5.5h3.04c.13 0 .26-.05.35-.15L17.81 9.94l-3.75-3.75L3.15 17.1c-.1.1-.15.22-.15.36M20.71 5.63l-2.34-2.34a.996.996 0 0 0-1.41 0l-1.83 1.83l3.75 3.75l1.83-1.83a.996.996 0 0 0 0-1.41'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .dash-courses {
+        gap: 4.8rem 2.4rem;
+        grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    }
+
+    .dash-figure__title {
+        font-size: 1.4rem;
+    }
+
+    .ic--baseline-delete,
+    .ic--round-mode-edit-outline {
+        width: 20px;
+        height: 20px;
+    }
+
+}
