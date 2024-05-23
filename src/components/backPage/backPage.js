@@ -5,5 +5,5 @@ export const backPage = course => {
     const channelURL = course.channelURL
     const courseID = getCourseID()
 
-    container.innerHTML = `<a href="/src/pages/page-course.html?channel=${channelURL}&course-id=${courseID}" class="video__page" type="button" data-js="page">Página</a>` 
+    container.innerHTML = `<a href="./page-course.html?channel=${channelURL}&course-id=${courseID}" class="video__page" type="button" data-js="page">Página</a>` 
 }
