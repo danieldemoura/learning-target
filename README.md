@@ -8,11 +8,7 @@ Esse projeto foi desenvolvido com Javascript puro, e utilizando a API do Youtube
   <a href="#tecnologias">Tecnologias</a>
 </p>
 
-<br>
-
-<p align="center">
-  <img alt="Projeto MediaPlay" src=".github/preview.png" width="100%">
-</p>
+https://github.com/danieldemoura/learning-target/assets/113316821/6fb2fe8a-92e0-477b-afa2-37f3a875fb4d
 
 [Acesse o projeto finalizado, online](https://danieldemoura.github.io/learning-target)
 
@@ -26,3 +22,5 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript
 - Git e Github
 - Figma
+
+
