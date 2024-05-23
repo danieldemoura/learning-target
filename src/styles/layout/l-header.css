@@ -1,6 +1,6 @@
 .l-header {
     background-color: #000000;
-    background-image: url(/src/assets/backgrounds/bg-notbook.jpg);
+    background-image: url(../../assets/backgrounds/bg-notbook.jpg);
     background-size: 100% 160%;
     background-position: 0rem 52%;
     background-attachment: fixed;
